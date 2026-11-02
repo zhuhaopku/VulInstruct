@@ -1,24 +1,22 @@
-# VulInstruct: Specification-Guided Vulnerability Detection
+# VulInstruct: Specification-Guided Vulnerability Detection 🔒
 
 Specification-guided vulnerability detection using general security knowledge, domain-specific NVD evidence, and root-cause evaluation.
 
-[Paper (FSE 2026)](https://doi.org/10.1145/3808132) | [Repository](https://github.com/zhuhaopku/VulInstruct) | [Knowledge dataset](https://huggingface.co/datasets/hzhu721/vulnerability-specifications)
+📄 [Paper (FSE 2026)](https://doi.org/10.1145/3808132) &nbsp; | &nbsp; 💻 [Code](https://github.com/zhuhaopku/VulInstruct) &nbsp; | &nbsp; 🤗 [Knowledge dataset](https://huggingface.co/datasets/hzhu721/vulnerability-specifications)
 
-## Updates
+## 📢 Updates
 
-- **[2026/11/02]** Released the refactored VulInstruct implementation, with knowledge construction, retrieval, detection, root-cause evaluation, and bundled inputs for the paper's PrimeVul evaluation. The previous `exp/` outputs are preserved in [Previous VulInstruct evaluation](history/previous-vulinstruct-evaluation/).
-- **[2026/03/28]** Our paper was accepted at **FSE 2026**. We shared experimental outputs in `exp/`, now available in [history](history/previous-vulinstruct-evaluation/).
-- **[2026/01/21]** Released the VulInstruct **Specification Knowledge Base** on [Hugging Face](https://huggingface.co/datasets/hzhu721/vulnerability-specifications).
+- **[2026/11/02]** 🚀 Released the refactored VulInstruct implementation, with knowledge construction, retrieval, detection, root-cause evaluation, and bundled inputs for the paper's PrimeVul evaluation. The previous `exp/` outputs are preserved in [Previous VulInstruct evaluation](history/previous-vulinstruct-evaluation/).
+- **[2026/03/28]** 🎉 Our paper was accepted at **FSE 2026**. We shared experimental outputs in `exp/`, now available in [history](history/previous-vulinstruct-evaluation/).
+- **[2026/01/21]** 🤗 Released the VulInstruct **Specification Knowledge Base** on [Hugging Face](https://huggingface.co/datasets/hzhu721/vulnerability-specifications).
 
 ## Release background
 
 At a very early stage of this work, we archived an initial implementation and experimental materials on [Zenodo (record 17211934)](https://zenodo.org/records/17211934). The implementation went through several revisions during paper submission and review. Corporate confidentiality constraints prevent us from publicly releasing one intermediate code version. This repository therefore provides a refactored implementation based on the initial Zenodo version and the method and evaluation updates in the final paper, organized to make VulInstruct easier to run, reuse, and extend.
 
-**Start with the code and instructions in this repository.** The main evaluation uses the bundled inputs. The early Zenodo archive is retained for historical reference and is only needed for the optional workflow that extracts specifications again from the archived source inputs.
-
 ## Security specification library
 
-Our **general security specification library is constructed from the CORRECT dataset**, introduced in [*Everything You Wanted to Know About LLM-based Vulnerability Detection But Were Afraid to Ask*](https://arxiv.org/abs/2504.13474). VulInstruct extracts security specifications and vulnerability/fix analyses from its vulnerable-patched code pairs. We publish the resulting specification library on [Hugging Face](https://huggingface.co/datasets/hzhu721/vulnerability-specifications). Domain-specific specifications use historical NVD evidence. In principle, the same extraction workflow can construct a security specification library from any high-quality vulnerability dataset that provides vulnerable and fixed code together with supporting vulnerability and patch evidence. See [knowledge construction](docs/DATA.md#extract-specifications-from-correct-dataset-inputs).
+Our **general security specification library is constructed from the CORRECT dataset**, introduced in [*Everything You Wanted to Know About LLM-based Vulnerability Detection But Were Afraid to Ask*](https://arxiv.org/abs/2504.13474). VulInstruct extracts security specifications and vulnerability/fix analyses from its vulnerable-patched code pairs. We publish the resulting specification library on [Hugging Face](https://huggingface.co/datasets/hzhu721/vulnerability-specifications). Domain-specific specifications use historical NVD evidence. In principle, the same extraction workflow can construct a security specification library from any high-quality vulnerability dataset that provides vulnerable and fixed code together with supporting vulnerability evidence. See [knowledge construction](docs/DATA.md#extract-specifications-from-correct-dataset-inputs).
 
 ## Included data
 
@@ -43,7 +41,7 @@ python tools/smoke_pipeline.py
 
 These checks run without LLM requests. The smoke test uses synthetic responses; it is a software check, not a benchmark result.
 
-## Run the full paper evaluation
+## VulInstruct evaluation
 
 ```sh
 python -m pip install -e '.[embedding]'
