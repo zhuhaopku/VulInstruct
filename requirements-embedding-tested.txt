@@ -1,0 +1,9 @@
+# Versions used in the successful Linux CUDA validation.
+# The available driver/runtime used torch 2.4.1+cu121 (CUDA 12.1 build).
+# Select the appropriate PyTorch wheel for your host; do not replace a working
+# CUDA installation merely to install this file.
+numpy==1.26.4
+torch==2.4.1
+transformers==4.57.1
+tokenizers==0.22.2
+huggingface-hub==0.36.2

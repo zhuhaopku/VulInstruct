@@ -1,0 +1,79 @@
+{
+  "schema": "vulinstruct-data-v1",
+  "primevul_benchmark": {
+    "path": "data/benchmarks/primevul.jsonl.gz",
+    "samples": 838,
+    "pairs": 419
+  },
+  "files": [
+    {
+      "path": "data/benchmarks/primevul.jsonl.gz",
+      "bytes": 1630049,
+      "sha256": "9c9d680b90e5dbedc7bc15be79149e4f7df4c23194f3e3bcda0c4c35b4291607"
+    },
+    {
+      "path": "data/benchmarks/sven-844.jsonl.gz",
+      "bytes": 753878,
+      "sha256": "2851eb8b90ec4b3d6a3ad1523927762ab7ca777979443e6479c84e8c0074a79b"
+    },
+    {
+      "path": "data/benchmarks/sven-844.jsonl.gz.manifest.json",
+      "bytes": 3731,
+      "sha256": "dad1ae48c841abf3085bf5b1ae840df1e5878a4577e94c817426021bd6bb92ce"
+    },
+    {
+      "path": "data/knowledge/correct-specifications-train.json",
+      "bytes": 14577430,
+      "sha256": "ff44f95c19430e4318fc089cbc585880fc52361123c923ca2463c7248e76265b"
+    },
+    {
+      "path": "data/knowledge/correct-specifications-train.json.manifest.json",
+      "bytes": 12830,
+      "sha256": "a35a66a88c8fbc7d49c868f1774c430309bd536d3b12f484479cb873b21979d0"
+    },
+    {
+      "path": "data/knowledge/correct-specifications.json",
+      "bytes": 15980136,
+      "sha256": "9ff0b60f3bda651c57f30de4d7a67081c6d4655543cd7fb7e1e385fa782b9730"
+    },
+    {
+      "path": "data/knowledge/nvd-2002-2024.jsonl.gz",
+      "bytes": 26732950,
+      "sha256": "c425481da047a8cb071aa23c4205423f370afc824ed78250bdc411bed919a157"
+    },
+    {
+      "path": "data/knowledge/nvd-2002-2024.jsonl.gz.manifest.json",
+      "bytes": 3739,
+      "sha256": "8acbdad1a29515a8072eb4872faca59cf3cae25cb0d62c7e603386a52e06fc5e"
+    },
+    {
+      "path": "data/knowledge/publication-dates.json",
+      "bytes": 173398,
+      "sha256": "cd559c57599b54c548d71712e7380bd8571f5d743fc874165512bc8e89d533a9"
+    },
+    {
+      "path": "data/prebuilt/qwen-general/corpus.json",
+      "bytes": 14577430,
+      "sha256": "ff44f95c19430e4318fc089cbc585880fc52361123c923ca2463c7248e76265b"
+    },
+    {
+      "path": "data/prebuilt/qwen-general/manifest.json",
+      "bytes": 546,
+      "sha256": "357eb1c398a61feb5d2c436d4a4710f2967022fe836c3bfa77cc7dceea838515"
+    },
+    {
+      "path": "data/prebuilt/qwen-general/vectors.npz",
+      "bytes": 5528666,
+      "sha256": "14f4dd72652ce05f19355e9437c1a7afc1b617f72e8770a02cccba0d24d26846"
+    }
+  ],
+  "general_specification_library": {
+    "source_dataset": "CORRECT",
+    "source_paper": "https://arxiv.org/abs/2504.13474",
+    "distribution": "https://huggingface.co/datasets/hzhu721/vulnerability-specifications",
+    "export": "data/knowledge/correct-specifications.json",
+    "prepared_corpus": "data/knowledge/correct-specifications-train.json",
+    "prebuilt_index": "data/prebuilt/qwen-general",
+    "split": "train"
+  }
+}

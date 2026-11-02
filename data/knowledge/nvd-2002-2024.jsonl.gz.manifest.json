@@ -1,0 +1,124 @@
+{
+  "schema": "normalized-nvd-v1",
+  "count": 173305,
+  "rejected_or_empty": 15156,
+  "duplicates": 0,
+  "sources": [
+    {
+      "file": "nvdcve-1.1-2002.json",
+      "sha256": "62f39e12301955e753b38d606483d5ae3a6724b057a7f920dde860ef812b77cc",
+      "rows": 106
+    },
+    {
+      "file": "nvdcve-1.1-2003.json",
+      "sha256": "91a0d423b839f59bddab75bfa5008ea47363995a9cb80e5febed0b33e33c916e",
+      "rows": 55
+    },
+    {
+      "file": "nvdcve-1.1-2004.json",
+      "sha256": "4e15e47b907c5e38c5af2d06d1d6fb5647363131b5566804f4c8e1e30da0a3ce",
+      "rows": 66
+    },
+    {
+      "file": "nvdcve-1.1-2005.json",
+      "sha256": "886a37216eeaea6f3372f95b231336b6b84bddb3541481753e64a227a60b68d7",
+      "rows": 153
+    },
+    {
+      "file": "nvdcve-1.1-2006.json",
+      "sha256": "0237ae77b9b5c460168692be4890588a348fb8a41cef6edc8fb2ad01512f01ba",
+      "rows": 159
+    },
+    {
+      "file": "nvdcve-1.1-2007.json",
+      "sha256": "71cd008f025bb7ba80ffc9e2e44d1ddebea4a7fc53d40d04306a5719840268e3",
+      "rows": 139
+    },
+    {
+      "file": "nvdcve-1.1-2008.json",
+      "sha256": "29e3174b5e7b37aa466ff368d014147ddc84d048092c1bc1c89f39a7c502f8cf",
+      "rows": 187
+    },
+    {
+      "file": "nvdcve-1.1-2009.json",
+      "sha256": "c1b7d253e0f56a5ad492d65262dff3ed558fece88a0a9ec58872b6c83b1baa8a",
+      "rows": 180
+    },
+    {
+      "file": "nvdcve-1.1-2010.json",
+      "sha256": "8424076cc7c94c29a24ad750b042cda7b2304d2ba642b5ce65f329d73b2d9704",
+      "rows": 285
+    },
+    {
+      "file": "nvdcve-1.1-2011.json",
+      "sha256": "b51728e32f2c7bbc220c4af7bbbfe83abc0be1f05128118456ac14727dda9443",
+      "rows": 471
+    },
+    {
+      "file": "nvdcve-1.1-2012.json",
+      "sha256": "57546c9a86e9f5c4fe4c3a4db03a9379917daeddaed7fc62eb069bdb7f78d625",
+      "rows": 742
+    },
+    {
+      "file": "nvdcve-1.1-2013.json",
+      "sha256": "edc9857946ee64b9d5999fd2b83e23c7c8262503c347908c861b5bc73f1b4a65",
+      "rows": 1154
+    },
+    {
+      "file": "nvdcve-1.1-2014.json",
+      "sha256": "38ed00c842e2975edf7a61f255e5ebeb668ccd0f1bcfbfded8cc7118e7a8414b",
+      "rows": 1262
+    },
+    {
+      "file": "nvdcve-1.1-2015.json",
+      "sha256": "1ac8c9ba337fdaefc2bfb4651dfaf3038fe4e8fe934bd4112e7cac03ac52d7f0",
+      "rows": 1581
+    },
+    {
+      "file": "nvdcve-1.1-2016.json",
+      "sha256": "08b836dda45612dfd3ab1709532cd986177739740dd6d2ed39bccc4ea62b34b6",
+      "rows": 2474
+    },
+    {
+      "file": "nvdcve-1.1-2017.json",
+      "sha256": "2c6f4ad7cc1a333d6acb1a60dbc094b2c260362c4e2ea4e99b7641e95ff3d86f",
+      "rows": 6201
+    },
+    {
+      "file": "nvdcve-1.1-2018.json",
+      "sha256": "62b05c0ca7c689480399f81f0bbdd6f6330f203674810085e58aa8a4874de383",
+      "rows": 17492
+    },
+    {
+      "file": "nvdcve-1.1-2019.json",
+      "sha256": "31664840e7233b97e4531ff31f4a62b7372f5680bf41afa5a1d6a48418998b1e",
+      "rows": 17030
+    },
+    {
+      "file": "nvdcve-1.1-2020.json",
+      "sha256": "79bacb0dc5b3a4bd8c064fdd8662ed207001be86c017a4ebfff77c2d80ab87f7",
+      "rows": 20606
+    },
+    {
+      "file": "nvdcve-1.1-2021.json",
+      "sha256": "7db51e62444416f4b3bbcdc1519ecb4aaf8da73db83a25e554739926f329d558",
+      "rows": 23075
+    },
+    {
+      "file": "nvdcve-1.1-2022.json",
+      "sha256": "a45a7f41d0d626af0523044dd2f3db9eb3d8b222079bfa3b648d7fa37e4d7643",
+      "rows": 26711
+    },
+    {
+      "file": "nvdcve-1.1-2023.json",
+      "sha256": "773d971bc34c3e380df41552401583c0c9f36a79d5b0a1bf39d2c2f81e580c88",
+      "rows": 29812
+    },
+    {
+      "file": "nvdcve-1.1-2024.json",
+      "sha256": "7652f438e1a142897b9511a8690257a28526bafd5aeec91f289f54ed6678594a",
+      "rows": 38520
+    }
+  ],
+  "sha256": "c425481da047a8cb071aa23c4205423f370afc824ed78250bdc411bed919a157"
+}

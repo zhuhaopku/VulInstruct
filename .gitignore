@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+research-data/
+runs/
+indexes/
+models/
+.env
+.env.*
+!.env.example
+examples/local-*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.pkl
+*.pickle
+*.sqlite
+*.db
+*.zip
+*.tar
+*.gz
+.DS_Store
+
+# Local maintainer notes
+internal-review/
+private-notes/
+
+# Bundled, checksummed benchmark and knowledge inputs
+!data/**/*.gz

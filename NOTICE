@@ -1,0 +1,41 @@
+VulInstruct
+
+The MIT license in LICENSE covers author-owned implementation, prompts,
+documentation, tests and synthetic fixtures. It does not relicense third-party
+benchmark code, datasets, advisory references, model weights or dependencies.
+Original code comments and dataset text are preserved as research inputs.
+
+Included sources and attribution:
+
+- VulInstruct paper inputs:
+  https://doi.org/10.1145/3808132
+  https://github.com/zhuhaopku/VulInstruct
+  The paper PrimeVul evaluation set is included. Data source hashes and
+  transformations are recorded in data/MANIFEST.json and docs/DATA.md.
+- CORRECT dataset:
+  Everything You Wanted to Know About LLM-based Vulnerability Detection
+  But Were Afraid to Ask, Yue Li et al.
+  https://arxiv.org/abs/2504.13474
+  Source dataset for the general security specification library. VulInstruct
+  extracts specifications and vulnerability/fix analyses from its paired code
+  and supporting evidence. Embedded code retains its original project terms.
+- VulInstruct specification library derived from CORRECT:
+  https://huggingface.co/datasets/hzhu721/vulnerability-specifications
+  The dataset card declares Apache-2.0; see LICENSES/Apache-2.0.txt.
+  The release includes correct-specifications.json and the prepared
+  correct-specifications-train.json corpus, with their retrieval vectors.
+- PrimeVul: https://github.com/DLVulDet/PrimeVul
+  Upstream repository license: MIT, Copyright (c) 2024 DLVulDet.
+  See LICENSES/PrimeVul-MIT.txt. Embedded code retains the terms of its
+  original projects; repository, file and commit identities are preserved.
+- SVEN: https://github.com/eth-sri/sven
+  Upstream license: MIT, Copyright (c) 2024 SRI Lab, ETH Zurich.
+  See LICENSES/SVEN-MIT.txt. Embedded source snippets retain their original
+  project terms and commit references.
+- NVD: https://nvd.nist.gov/
+  This product uses data from the NVD API but is not endorsed or certified by the NVD.
+  Referenced advisories and source code retain their respective rights.
+- Qwen3-Embedding-0.6B:
+  https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+  Precomputed knowledge vectors are included. Model weights are downloaded
+  separately and retain the model's own license.

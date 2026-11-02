@@ -1,0 +1,23 @@
+name: release-checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+      - run: python -m vulinstruct doctor
+      - run: python tools/smoke_pipeline.py
+      - run: python tools/build_release.py --output "${{ runner.temp }}/VulInstruct-source.zip"
+      - run: python tools/audit_release.py "${{ runner.temp }}/VulInstruct-source.zip"

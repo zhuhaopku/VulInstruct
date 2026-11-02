@@ -1,4 +1,8 @@
- This directory contains the experimental outputs from our evaluation.
+# Previous VulInstruct evaluation
+
+These previously published experimental outputs were moved from `exp/`. For the current implementation and evaluation workflow, see the [main README](../../README.md).
+
+This directory contains the experimental outputs from our evaluation.
  
 ## Files
  

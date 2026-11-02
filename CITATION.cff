@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use VulInstruct, please cite our FSE 2026 paper below."
+title: "VulInstruct"
+type: software
+version: 0.5.7
+license: MIT
+repository-code: "https://github.com/zhuhaopku/VulInstruct"
+authors:
+  - family-names: Zhu
+    given-names: Hao
+preferred-citation:
+  type: article
+  title: "VulInstruct: Teaching LLMs Root-Cause Reasoning for Vulnerability Detection via Security Specifications"
+  journal: "Proceedings of the ACM on Software Engineering"
+  volume: "3"
+  issue: "FSE"
+  start: 2813
+  end: 2834
+  year: 2026
+  month: 6
+  doi: "10.1145/3808132"
+  url: "https://doi.org/10.1145/3808132"
+  authors:
+    - family-names: Zhu
+      given-names: Hao
+    - family-names: Li
+      given-names: Jia
+    - family-names: Gao
+      given-names: Cuiyun
+    - family-names: Qian
+      given-names: Jiaru
+    - family-names: Dong
+      given-names: Yihong
+    - family-names: Liu
+      given-names: Huanyu
+    - family-names: Wang
+      given-names: Lecheng
+    - family-names: Wang
+      given-names: Ziliang
+    - family-names: Hu
+      given-names: Xiaolong
+    - family-names: Li
+      given-names: Ge

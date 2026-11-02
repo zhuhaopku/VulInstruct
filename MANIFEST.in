@@ -1,0 +1,16 @@
+include LICENSE NOTICE README.md CITATION.cff SECURITY.md CONTRIBUTING.md
+include requirements-embedding-tested.txt
+include .gitignore .gitattributes .env.example MANIFEST.in
+recursive-include .github *.yml
+recursive-include docs *.md
+recursive-include examples config.json deepseek-flash.json
+recursive-include resources *.json
+recursive-include tools *.py
+recursive-include tests *.py
+global-exclude *.pyc
+prune research-data
+prune runs
+prune indexes
+
+prune internal-review
+prune private-notes

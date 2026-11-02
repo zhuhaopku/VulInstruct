@@ -1,0 +1,104 @@
+{
+  "base_url": "https://example.invalid/v1",
+  "key_env": "VULINSTRUCT_API_KEY",
+  "cache_dir": "../runs/flash-api-cache",
+  "models": {
+    "knowledge": "deepseek-flash",
+    "detector": "deepseek-flash",
+    "judge": "deepseek-flash"
+  },
+  "general_index": "../data/prebuilt/qwen-general",
+  "nvd_index": "../indexes/nvd.sqlite",
+  "publication_metadata": "../data/knowledge/publication-dates.json",
+  "embedding": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "c54f2e6e80b2d7b7de06f51cec4959f6b3e03418",
+    "max_length": 8192
+  },
+  "thresholds": {
+    "cases": 6,
+    "specifications": 6,
+    "nvd": 6
+  },
+  "top_k": 10,
+  "max_keyword_frequency": 500,
+  "score_workers": 3,
+  "max_output_tokens": 8192,
+  "timeout": 600,
+  "retries": 2,
+  "allow_patch_only_judge": false,
+  "request_options": {
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "sample_workers": 4,
+  "allow_http": false,
+  "prompt_protocol": "domain-cascade-v4",
+  "stage_request_options": {
+    "detect": {
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "judge": {
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "detect-output-retry": {
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "judge-output-retry": {
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "detect-output-fallback": {
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low"
+    },
+    "judge-output-fallback": {
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low"
+    },
+    "detect-output-direct": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "judge-output-direct": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "detect-output-direct-retry": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "judge-output-direct-retry": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "stage_max_output_tokens": {
+    "detect": 32768,
+    "judge": 16384,
+    "detect-output-retry": 65536,
+    "judge-output-retry": 32768,
+    "detect-output-fallback": 32768,
+    "judge-output-fallback": 8192,
+    "detect-output-direct": 8192,
+    "judge-output-direct": 8192,
+    "detect-output-direct-retry": 32768,
+    "judge-output-direct-retry": 16384
+  }
+}

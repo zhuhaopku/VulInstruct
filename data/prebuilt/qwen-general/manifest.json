@@ -1,0 +1,17 @@
+{
+  "schema": "dense-v1",
+  "encoder": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "c54f2e6e80b2d7b7de06f51cec4959f6b3e03418",
+    "pooling": "last-token/l2",
+    "max_length": 8192,
+    "instruction": null
+  },
+  "features": [
+    "understand"
+  ],
+  "count": 1452,
+  "corpus_sha256": "ff44f95c19430e4318fc089cbc585880fc52361123c923ca2463c7248e76265b",
+  "case_ids_hash": "f090558f89eeae54c8eb3c2a7fb33ac742dd2ae5767e596446c8c930c9ec72e0",
+  "vectors_sha256": "14f4dd72652ce05f19355e9437c1a7afc1b617f72e8770a02cccba0d24d26846"
+}
